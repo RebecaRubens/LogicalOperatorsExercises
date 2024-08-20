@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilottus</title>
+</head>
+<body>
+    
+    altura inicial: <input type="text" id="alt_inicial">
+    altura final: <input type="text" id="alt_final">
+    nome: <input type="text" id="ipt_nome">
+    altura do candidato: <input type="text" id="ipt_alt">
+    <button onclick="verificar()">Verificar candidato</button>
+    <div id="div_msg"></div>
+</body>
+</html>
+<script>
+    
+function verificar(){
+    var inicial = Number(alt_inicial.value);
+    var final = Number(alt_final.value);
+    var nome = ipt_nome.value;
+    var altura = Number(ipt_alt.value);
+
+if (inicial <1 && final < inicial) {
+    alert('Intervalo da altura de seleção é inválida! A altura inicial deve ser maior que 1 e a altura final deve ser maior que a altura inicial')
+}
+
+else if ( final <1 && final < inicial && ){
+    alert('')
+}
+}
+    
+    
+</script>

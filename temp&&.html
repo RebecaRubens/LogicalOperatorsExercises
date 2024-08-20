@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Temperatura atual: <input type="text" id="ipt_temp">
+    <button onclick="ver()">Ver situação</button>
+</body>
+</html>
+<script>
+    function ver(){
+        var temp = Number(ipt_temp.value);
+
+        if (temp >=21 && temp <= 24) {
+            
+            alert ('Temperatura Confortável');
+        }
+
+        else {alert ('Temperatura Desconfortável');}
+    }
+</script>

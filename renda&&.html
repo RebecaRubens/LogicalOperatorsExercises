@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>renda</title>
+</head>
+<body>
+    insira sua renda: <input type="text" id="ipt_renda"> <br>
+    insira sua renda familiar: <input type="text" id="ipt_rendafamilia"> <br>
+    <button onclick="analisar()"> Verificar ajuda </button>
+</body>
+</html>
+<script>
+    function analisar(){
+        var renda = Number(ipt_renda.value);
+        var rendaFam = Number(ipt_rendafamilia.value);
+
+    if (rendaFam <=1050 && renda <=2100) {
+        alert ('Voce tem direito!')
+    }
+    else {
+        alert('Voce NAO tem direito')
+    }
+    }
+</script>
